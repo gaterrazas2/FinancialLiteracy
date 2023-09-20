@@ -2,7 +2,7 @@ import "./Calculator.css"
 function Calculator(){
     return(
         <center className="calculator">
-            <button>The Calculator Goes here</button>
+            <button>Calculator</button>
         </center>
     )
 }

@@ -1,5 +1,6 @@
 import Card from "../UI/Card"
 import "./DefinitionsForm.css"
+import "./Definitions.css"
 function DefinitionsForm(props){
     return(
         <Card className = "definitions-form">
@@ -33,7 +34,7 @@ function DefinitionsForm(props){
                     Debt/Loans
                 </h2>
             </center>
-            <center>
+            <center className="definition">
                 <button onClick={props.onClose}>Close</button>
             </center>
         </Card>
