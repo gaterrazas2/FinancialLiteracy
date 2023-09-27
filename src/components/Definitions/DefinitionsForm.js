@@ -34,6 +34,11 @@ function DefinitionsForm(props){
                     Debt/Loans
                 </h2>
             </center>
+            <center>
+                <h2>
+                    Investing
+                </h2>
+            </center>
             <center className="definition">
                 <button onClick={props.onClose}>Close</button>
             </center>
