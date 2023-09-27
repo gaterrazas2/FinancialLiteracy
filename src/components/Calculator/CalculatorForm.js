@@ -58,7 +58,7 @@ function CalculatorForm(props){
                     <div/>   
                     <label>Interest rate</label>
                     <div/>
-                    <input type="number" min="1" step="1" value={enteredInterestRate} onChange={interstRateChanger} required/>
+                    <input type="number" min=".01" max=".99" step=".01" value={enteredInterestRate} onChange={interstRateChanger} required/>
                     <div/>
                     <button type="submit">Calculate</button>
                     <button type="button" onClick={props.onCancel}>Close</button>
