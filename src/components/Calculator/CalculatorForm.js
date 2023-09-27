@@ -7,6 +7,11 @@ function CalculatorForm(props){
     const [enteredNumberofYears, setEnteredNumberofYears] = useState('');
     const [enteredInterestRate, setEnteredInterestRate] = useState('');
     const [resultsVisible, setResultsVisible] = useState(false);
+    const [loanData, setLoanData] = useState({
+        amount: 0,
+        numYears: 0,
+        interestRate: 0 
+    })
 
     // Functions for updating the form
     function totalAmountChanger(event){
@@ -23,14 +28,14 @@ function CalculatorForm(props){
 
     function submitHandler(event){
         event.preventDefault();
-        const loanData = {
+        setLoanData({
             amount: enteredTotalAmount,
             numYears: enteredNumberofYears,
             interestRate: enteredInterestRate
-        }
-        setEnteredNumberofYears();
-        setEnteredInterestRate();
-        setEnteredTotalAmount();
+        })
+        setEnteredNumberofYears(0);
+        setEnteredInterestRate(0);
+        setEnteredTotalAmount(0);
         setResultsVisible(true)
     }
 
@@ -40,8 +45,8 @@ function CalculatorForm(props){
 
     if(!resultsVisible){
     return( 
-        <form onSubmit={submitHandler}>
-            <Card>
+        <Card>
+            <form onSubmit={submitHandler}>
                 <center>
                     <label>Total Amount</label>
                     <div/>
@@ -58,13 +63,13 @@ function CalculatorForm(props){
                     <button type="submit">Calculate</button>
                     <button type="button" onClick={props.onCancel}>Close</button>
                 </center>
-            </Card>
-        </form>
+            </form>
+        </Card>
     )
     } 
     else{
         return(
-            <LoanInfo onClose={closeHandler}/>
+            <LoanInfo onClose={closeHandler} amount={loanData.amount} numYears={loanData.numYears} interestRate={loanData.interestRate}/>
         )
     }  
 }

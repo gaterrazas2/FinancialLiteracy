@@ -3,7 +3,7 @@ import CalculatorForm from "./CalculatorForm"
 import { useState } from "react"
 import Card from "../UI/Card"
 function Calculator(){
-    const [isVisible, setIsVisible] = useState(true)
+    const [isVisible, setIsVisible] = useState(false)
 
     function clickHandler(){
         setIsVisible(!isVisible)
