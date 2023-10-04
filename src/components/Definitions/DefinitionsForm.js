@@ -7,12 +7,6 @@ function DefinitionsForm(props){
             <center>
                 <h2>    
                     Personal Finance
-                    
-                    - Personal finance manages money for goals.
-
-                    - Involves goal setting, budgeting, saving, investing, and asset protection.
-
-                    - Builds financial security and peace of mind.
                 </h2>
             </center>
             <center>
