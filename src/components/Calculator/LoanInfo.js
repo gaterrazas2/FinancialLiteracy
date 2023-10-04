@@ -1,4 +1,6 @@
 function LoanInfo(props){
+
+
     return(
         <center>
             <div>Loan Info</div>
