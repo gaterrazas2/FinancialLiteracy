@@ -1,3 +1,2 @@
 # ExpenseTracker
-Financial Literacy Final Project
-
+A website to help you track your expenses
