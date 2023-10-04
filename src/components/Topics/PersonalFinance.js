@@ -40,19 +40,19 @@ function PersonalFinance(props){
             <h2>Setting Financial Goals:</h2>
 
             The first step to good personal finance is to set financial goals. Your goals should be specific, measurable, achievable, relevant, and time-bound. A financial goal might be to save $10,000 for a downpayment on a house in three years or to save $30,000 for an emergency fund. Not only are these important for having better finances, but they also help you create a better future for yourself where you are not drowning in debt.
-
+            <div/>
             The biggest step to achieving your financial goals is to create a budget:
-
+            <div/>
             A Budget is a plan for how you will spend your money. It can help you track your income and expenses, stay on track with your financial goals, and avoid overspending. There are many ways to budget, whether that be a specific plan you follow or just splitting a part of your paycheck every week, you should do whatever works for you.
-
+            <div/>
             Another major area of personal finance is credit:
-
+            <div/>
             Credit is the ability to borrow money with the promise that you'll repay it in the future, often with interest. Having good credit is essential in having good finances as it allows for higher loan approval, lower rates, and better terms across the many types of credit, which can include credit cards, student/car loans, and mortgages. The most important thing to remember about credit is to use it responsibly, including on-time payments which will build a strong credit history for you.
-
+            <div/>
             The biggest aspect of personal finance that can lead to stable finances is saving:
-
+            <div/>
             Saving money is the most important step to achieving your financial goals. There are many ways to save money such as setting up a savings account, contributing to a retirement plan, or using a budgeting app. Make sure to set aside money for savings each month even if it’s a small amount as something is better than nothing. Having money saved up can lead to you having low risk when it comes to investing, accidents, etc. as your savings can act as a safety net to save you from ruining your finances through bad investing or through accidents.
-            <div></div>
+            <div/>
             <button onClick={props.onClose}>Close</button>
         </center>
     )
