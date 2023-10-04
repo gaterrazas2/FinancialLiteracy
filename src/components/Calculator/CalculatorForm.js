@@ -1,6 +1,8 @@
 import { useState } from "react";
 import LoanInfo from "./LoanInfo";
 import Card from "../UI/Card";
+import "./CalculatorForm.css"
+import "../newExpense/NewExpense.css"
 function CalculatorForm(props){
 
     const [enteredTotalAmount, setEnteredTotalAmount] = useState('');
@@ -46,17 +48,18 @@ function CalculatorForm(props){
     if(!resultsVisible){
     return( 
         <Card>
-            <form onSubmit={submitHandler}>
-                <center>
-                    <label>Total Amount</label>
+            <form onSubmit={submitHandler} className="calculator">
+                <center className='new-expense__control'>
+                    <label className='new-expense__control'>Total Amount</label>
                     <div/>
                     <input type="number" min="0.01" step="0.01" value={enteredTotalAmount} onChange={totalAmountChanger} required/>
                     <div/>
-                    <label>Number of Years</label>
+                    <label className='new-expense__control'>Number of Years</label>
                     <div/>
                     <input type="number" min="1" step="1" value={enteredNumberofYears} onChange={numberOfYearsChanger} required/> 
                     <div/>   
-                    <label>Interest rate</label>
+                    <label className='new-expense__control'>Interest rate</label>
+                    <div/>
                     <div/>
                     <input type="number" min=".01" step=".01" value={enteredInterestRate} onChange={interstRateChanger} required/>
                     <div/>
