@@ -47,7 +47,7 @@ function ExpenseForm(props){
 
             <div className='new-expense__control'> 
                 <label>Date</label>
-                <input type="date" min="2019-01-01" max="2022-12-31" value={enteredDate} onChange={dateChanger} required/>
+                <input type="date" min="2019-01-01" max="2023-12-31" value={enteredDate} onChange={dateChanger} required/>
             </div>
         </div>
         <div className='new-expense__actions'>
