@@ -6,6 +6,7 @@ function AboutUsForm(props){
             <h3>Gabriel Terrazas</h3>
             <div>Dedicated instructional assistant with a passion for empowering learners. A proud alumni ambassador for AI4ALL. Currently in my senior year, preparing to make a mark in the world of technology</div>
             <h3>Emilia Rivas</h3>
+            <div>I am a senior in computer science, and I have learned most about credit in this class</div>
             <h3>Diego Acosta</h3>
             <button onClick={props.onCancel}>Close</button>
         </center>
